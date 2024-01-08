@@ -1,0 +1,54 @@
+@model Candidate
+<div class="display-6"> Apply</div>
+
+<form>
+    <div>
+        <label>Email</label>
+        <input type="text" name="email" class="form-control my-2">
+    </div>
+    <div>
+        <label>FirstName</label>
+        <input type="text" name="firstName" class="form-control my-2">
+    </div>
+    <div>
+        <label>LastName</label>
+        <input type="text" name="lastName" class="form-control my-2">
+    </div>
+    <div>
+        <label>Age</label>
+        <select name="age" class="form-control my-2">
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+        </select>
+    </div>
+    <fieldset>
+        <legend for="course">Select One Course</legend>
+        <p>
+            <input type="radio" id="mvc" name="SelectedCourse" value="ASP.NET Core MVC">
+            <label>ASP.net Core</label>
+        </p>
+        <p>
+            <input type="radio" id="api" name="SelectedCourse" value="ASP.NET Core API">
+            <label>ASP.net API</label>
+        </p>
+        <p>
+            <input type="radio" id="react" name="SelectedCourse" value="React JS">
+            <label>React JS</label>
+        </p>
+        <p>
+            <input type="radio" id="java" name="SelectedCourse" value="Java">
+            <label>Java</label>
+        </p>
+    </fieldset>
+    <div>
+        <button type="submit" class="btn btn-primary mt-2">Apply</button>
+        <a class="btn btn-warning mt-2" href="/">Home</a>
+    </div>
+</form>
